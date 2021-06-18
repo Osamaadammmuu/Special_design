@@ -640,8 +640,30 @@
       </div>
     </footer>
     <script>
-    $(document).ready(function(){
-    alert("hi");}
+    const colorsLi = document.querySelectorAll(".colors li"); // switch color
+
+colorsLi.forEach((li) => {
+  // loop on all list
+
+  li.addEventListener("click", (e) => {
+    // click in everyone li
+
+    document.documentElement.style.setProperty(
+      "--main-color",
+      e.target.dataset.color
+    ); // set color in root
+
+    localStorage.setItem("Color_option", e.target.dataset.color); // set color in local
+
+    // remove all active class for all " li "
+
+    e.target.parentElement.querySelectorAll(".active").forEach((element) => {
+      element.classList.remove("active");
+    });
+
+    e.target.classList.add("active"); // add class active when you click on it
+  });
+});
     </script>
     <script src="../../lib/jquery-3.4.1.min.js"></script>
     <script src="../../lib/jquery.easypiechart.js"></script>
