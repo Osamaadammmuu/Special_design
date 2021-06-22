@@ -10,7 +10,7 @@ document.querySelector(".icon-con").onclick = function () {
 $(function () {
   $(document).scroll(function () {
     var $nav = $(".nav-special");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
   });
 });
 // ~~~~ --< Color's >-- ~~~~~ //
@@ -197,7 +197,7 @@ let ourGallery = document.querySelectorAll(
 );
 
 ourGallery.forEach((ve) => {
-  ve.addEventListener("click", (e) => { 
+  ve.addEventListener("click", (e) => {
     let Overlay = document.createElement("div");
 
     Overlay.className = "OverPoPuP";
@@ -241,8 +241,6 @@ document.addEventListener("click", function (e) {
     document.querySelector(".OverPoPuP").remove();
   }
 });
-
-
 
 // >>----------------------------<<  Bullets  >>--------------------------------<<
 
@@ -394,14 +392,14 @@ let featurestheme = document.querySelector(".features");
 let contacttheme = document.querySelector(".contact");
 // let bulletstheme = document.querySelector(".all-bullets");
 let scrolltheme = document.querySelector(".scroll-top");
-let landsvdark = document.querySelector('.svg-land')
-let skillswave = document.querySelector('.wave-up')
-let skillswavee = document.querySelector('.wave')
+let landsvdark = document.querySelector(".svg-land");
+let skillswave = document.querySelector(".wave-up");
+let skillswavee = document.querySelector(".wave");
 
 darkButton.onclick = function (e) {
   bodytheme.classList.add("dark");
   settingtheme.classList.add("dark");
-  landingPage.classList.add('dark');
+  landingPage.classList.add("dark");
   abouttheme.classList.add("dark");
   skillstheme.classList.add("dark");
   timelinetheme.classList.add("dark");
@@ -410,15 +408,15 @@ darkButton.onclick = function (e) {
   // bulletstheme.classList.add("dark");
   gallerytheme.classList.add("dark");
   scrolltheme.classList.add("dark");
-  landsvdark.classList.add('dark')
-  skillswave.classList.add('dark')
-  skillswavee.classList.add('dark')
+  landsvdark.classList.add("dark");
+  skillswave.classList.add("dark");
+  skillswavee.classList.add("dark");
   hadleActive(e);
 };
 lightButton.onclick = function (e) {
   bodytheme.classList.remove("dark");
   settingtheme.classList.remove("dark");
-  landingPage.classList.remove('dark');
+  landingPage.classList.remove("dark");
   abouttheme.classList.remove("dark");
   skillstheme.classList.remove("dark");
   timelinetheme.classList.remove("dark");
@@ -427,7 +425,7 @@ lightButton.onclick = function (e) {
   // bulletstheme.classList.remove("dark");
   gallerytheme.classList.remove("dark");
   scrolltheme.classList.remove("dark");
-  landsvdark.classList.remove('dark')
+  landsvdark.classList.remove("dark");
   skillswave.classList.remove("dark");
   skillswavee.classList.remove("dark");
   hadleActive(e);
@@ -455,31 +453,30 @@ hidi.onclick = function (e) {
   hadleActive(e);
 };
 
-
 //---------------------<<  Blind-people >>-------------------------//
 
-let blindoClick   = document.querySelector(".blind .theme-box .on-blind");
-let blindfClick   = document.querySelector(".blind .theme-box .off-blind");
-let settingBlind  = document.querySelector(".setting-box");
-let special       = document.querySelector(".specialdesign");
-let aboutBlind    = document.querySelector(".about-us");
-let skillsBlind   = document.querySelector(".skills");
-let galleryBlind  = document.querySelector(".gallery");
+let blindoClick = document.querySelector(".blind .theme-box .on-blind");
+let blindfClick = document.querySelector(".blind .theme-box .off-blind");
+let settingBlind = document.querySelector(".setting-box");
+let special = document.querySelector(".specialdesign");
+let aboutBlind = document.querySelector(".about-us");
+let skillsBlind = document.querySelector(".skills");
+let galleryBlind = document.querySelector(".gallery");
 let timelineBlind = document.querySelector(".timeline");
 let featuresBlind = document.querySelector(".features");
-let contactBlind  = document.querySelector(".contact");
+let contactBlind = document.querySelector(".contact");
 // let bulletsBlind  = document.querySelector(".all-bullets");
-let testemoBlind  = document.querySelector(".testemonial");
-let footerBlind   = document.querySelector(".footer");
-let landBlind     = document.querySelector(".landing-page");
-let scroltoop     = document.querySelector(".scroll-top");
-let conxtact      = document.querySelector(".all-contact");
-let chatbox       = document.querySelector(".chat-us");
-let immersiv      = document.querySelector(".immersive");
-let pricooo       = document.querySelector(".price-box");
-let clientoo      = document.querySelector(".clients-feedback");
-let contentchat   = document.querySelector(".content-cc");
-let niceBlind     = document.querySelector(".nicescroll-rails.nicescroll-rails-vr");
+let testemoBlind = document.querySelector(".testemonial");
+let footerBlind = document.querySelector(".footer");
+let landBlind = document.querySelector(".landing-page");
+let scroltoop = document.querySelector(".scroll-top");
+let conxtact = document.querySelector(".all-contact");
+let chatbox = document.querySelector(".chat-us");
+let immersiv = document.querySelector(".immersive");
+let pricooo = document.querySelector(".price-box");
+let clientoo = document.querySelector(".clients-feedback");
+let contentchat = document.querySelector(".content-cc");
+let niceBlind = document.querySelector(".nicescroll-rails.nicescroll-rails-vr");
 
 blindfClick.onclick = function (e) {
   aboutBlind.classList.remove("eyeblind");
@@ -529,41 +526,41 @@ blindoClick.onclick = function (e) {
 };
 //---------------------<<  nice-scroll >>-------------------------//
 
-let niceeSroll = $("html").niceScroll({
-  cursorcolor: "var(--main-color)",
-  cursorwidth: "11px",
-  cursorborder: "none",
-  cursorborderradius: 0,
-  background: "#d4d4d4",
-  position: "relative",
-  zindex: "999999999999999",
-  filter: "grayscale(1)",
-  autohidemode: false,
-  horizrailenabled: true,
-});
-let lsss = $(".setting-box .content ").niceScroll({
-  cursorcolor: "var(--main-color)",
-  cursorwidth: "11px",
-  cursorborder: "none",
-  cursorborderradius: 0,
-  background: "#d4d4d4",
-  position: "relative",
-  zindex: "99999999",
-  filter: "grayscale(1)",
-  autohidemode: false,
-  horizrailenabled: true,
-});
+// let niceeSroll = $("html").niceScroll({
+//   cursorcolor: "var(--main-color)",
+//   cursorwidth: "11px",
+//   cursorborder: "none",
+//   cursorborderradius: 0,
+//   background: "#d4d4d4",
+//   position: "relative",
+//   zindex: "999999999999999",
+//   filter: "grayscale(1)",
+//   autohidemode: false,
+//   horizrailenabled: true,
+// });
+// let lsss = $(".setting-box .content ").niceScroll({
+//   cursorcolor: "var(--main-color)",
+//   cursorwidth: "11px",
+//   cursorborder: "none",
+//   cursorborderradius: 0,
+//   background: "#d4d4d4",
+//   position: "relative",
+//   zindex: "99999999",
+//   filter: "grayscale(1)",
+//   autohidemode: false,
+//   horizrailenabled: true,
+// });
 
-// $(".setting-box .content").getNiceScroll().resize();
-$(".blind .off-blind").on("click", function () {
-  //    console.log('you are clicked now');
-  $(".nicescroll-rails.nicescroll-rails-vr").removeClass("eyeblind");
-});
+// // $(".setting-box .content").getNiceScroll().resize();
+// $(".blind .off-blind").on("click", function () {
+//   //    console.log('you are clicked now');
+//   $(".nicescroll-rails.nicescroll-rails-vr").removeClass("eyeblind");
+// });
 
-$(".blind .on-blind").on("click", function () {
-  //    console.log('you are clicked now');
-  $(".nicescroll-rails.nicescroll-rails-vr").addClass("eyeblind");
-});
+// $(".blind .on-blind").on("click", function () {
+//   //    console.log('you are clicked now');
+//   $(".nicescroll-rails.nicescroll-rails-vr").addClass("eyeblind");
+// });
 
 // -------------------------------------   Scroll to top  ------------------------------------
 
@@ -605,17 +602,17 @@ $(function () {
   "use strict";
   $(window).scroll(function () {
     var scrolling = $(this).scrollTop(),
-    skillsOffset = $(".about-us").offset().top;
+      skillsOffset = $(".about-us").offset().top;
     if ($(this).scrollTop() >= 1070) {
       $(".chart").easyPieChart({
         scaleColor: "transparent",
         animate: 1600,
         lineWidth: 7,
-        lineCap: 'square', //Can be butt
-        barColor: '#009CEF',
-        trackColor:	"#dddd",
+        lineCap: "square", //Can be butt
+        barColor: "#009CEF",
+        trackColor: "#dddd",
         size: 120,
-        rotate: 0,    
+        rotate: 0,
         animate: 1200,
         // barColor: function (percent) {
         //   return percent < 50
@@ -624,7 +621,6 @@ $(function () {
         //     ? "#f0ad4e"
         //     : "#5cb85c";
         // }
-        
       });
     }
   });
@@ -651,7 +647,7 @@ var chatus = $(".chat-us");
 var chatcon = $(".content-cc");
 var chatchange = $(".ch-message");
 var chatminize = $(".content-cc .request i");
-chatminize.click(function(){
+chatminize.click(function () {
   chatcon.hide();
   $("i", chatus).toggleClass("fa-comment-alt fa-times");
 });
@@ -668,7 +664,7 @@ $(window).scroll(function () {
   }
 });
 // ****************************  contact-box   *****************************
-var contactbox = $('.all-contact');
+var contactbox = $(".all-contact");
 $(window).scroll(function () {
   if ($(this).scrollTop() >= 400) {
     contactbox.fadeIn();
@@ -677,20 +673,16 @@ $(window).scroll(function () {
   }
 });
 // ****************************  deal with tabs  *****************************
-$('.clients-pic img').click(function(){
-  // add selected class to active link 
-  $(this).addClass('selected').siblings().removeClass('selected'); 
+$(".clients-pic img").click(function () {
+  // add selected class to active link
+  $(this).addClass("selected").siblings().removeClass("selected");
   // hide all divs
-  $('.clients-say .content > div').hide(); 
+  $(".clients-say .content > div").hide();
   // show div when i clicked
-  $('.' + $(this).data('class')).show(); 
-
-
-
+  $("." + $(this).data("class")).show();
 });
 // let popupchat = document.createElement('div');
 // popupchat.className = "pp-chat";
 // document.querySelector('.chat-us').appendChild(popupchat);
-
 
 // $('editable').editableSelect();
