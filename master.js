@@ -526,41 +526,41 @@ blindoClick.onclick = function (e) {
 };
 //---------------------<<  nice-scroll >>-------------------------//
 
-let niceeSroll = $("html").niceScroll({
-  cursorcolor: "var(--main-color)",
-  cursorwidth: "11px",
-  cursorborder: "none",
-  cursorborderradius: 0,
-  background: "#d4d4d4",
-  position: "relative",
-  zindex: "999999999999999",
-  filter: "grayscale(1)",
-  autohidemode: false,
-  horizrailenabled: true,
-});
-let lsss = $(".setting-box .content ").niceScroll({
-  cursorcolor: "var(--main-color)",
-  cursorwidth: "11px",
-  cursorborder: "none",
-  cursorborderradius: 0,
-  background: "#d4d4d4",
-  position: "relative",
-  zindex: "99999999",
-  filter: "grayscale(1)",
-  autohidemode: false,
-  horizrailenabled: true,
-});
+// let niceeSroll = $("html").niceScroll({
+//   cursorcolor: "var(--main-color)",
+//   cursorwidth: "11px",
+//   cursorborder: "none",
+//   cursorborderradius: 0,
+//   background: "#d4d4d4",
+//   position: "relative",
+//   zindex: "999999999999999",
+//   filter: "grayscale(1)",
+//   autohidemode: false,
+//   horizrailenabled: true,
+// });
+// let lsss = $(".setting-box .content ").niceScroll({
+//   cursorcolor: "var(--main-color)",
+//   cursorwidth: "11px",
+//   cursorborder: "none",
+//   cursorborderradius: 0,
+//   background: "#d4d4d4",
+//   position: "relative",
+//   zindex: "99999999",
+//   filter: "grayscale(1)",
+//   autohidemode: false,
+//   horizrailenabled: true,
+// });
 
-// $(".setting-box .content").getNiceScroll().resize();
-$(".blind .off-blind").on("click", function () {
-  //    console.log('you are clicked now');
-  $(".nicescroll-rails.nicescroll-rails-vr").removeClass("eyeblind");
-});
+// // $(".setting-box .content").getNiceScroll().resize();
+// $(".blind .off-blind").on("click", function () {
+//   //    console.log('you are clicked now');
+//   $(".nicescroll-rails.nicescroll-rails-vr").removeClass("eyeblind");
+// });
 
-$(".blind .on-blind").on("click", function () {
-  //    console.log('you are clicked now');
-  $(".nicescroll-rails.nicescroll-rails-vr").addClass("eyeblind");
-});
+// $(".blind .on-blind").on("click", function () {
+//   //    console.log('you are clicked now');
+//   $(".nicescroll-rails.nicescroll-rails-vr").addClass("eyeblind");
+// });
 
 // -------------------------------------   Scroll to top  ------------------------------------
 
