@@ -476,7 +476,7 @@ let immersiv = document.querySelector(".immersive");
 let pricooo = document.querySelector(".price-box");
 let clientoo = document.querySelector(".clients-feedback");
 let contentchat = document.querySelector(".content-cc");
-let niceBlind = document.querySelector(".nicescroll-rails.nicescroll-rails-vr");
+// let niceBlind = document.querySelector(".nicescroll-rails.nicescroll-rails-vr");
 
 blindfClick.onclick = function (e) {
   aboutBlind.classList.remove("eyeblind");
@@ -492,7 +492,7 @@ blindfClick.onclick = function (e) {
   landBlind.classList.remove("eyeblind");
   scroltoop.classList.remove("eyeblind");
   settingBlind.classList.remove("eyeblind");
-  niceBlind.classList.remove("eyeblind");
+  // niceBlind.classList.remove("eyeblind");
   conxtact.classList.remove("eyeblind");
   chatbox.classList.remove("eyeblind");
   immersiv.classList.remove("eyeblind");
