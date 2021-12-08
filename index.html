@@ -1,680 +1,568 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(name='discription' content='remember and training')
-    //-meta first mobile
-    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    title  Special Template
-    link(rel='stylesheet' href='../../lib/fontawesome-free-5.15.2-web 2/css/all.min.css')
-    link(rel='stylesheet' href='../dist/css/design.css')
-    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap')
-    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css')
-    link(href='https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Fira+Sans+Extra+Condensed:wght@60&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;500&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Righteous&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Carter+One&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Atma:wght@500;600&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Nova+Square&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Acme&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Courgette&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Istok+Web&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap' rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap' rel='stylesheet')
-    link(href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet")
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
-  //---------------------------<<  Setting  >>-----------------------------
-  body
-    section.setting-box
-      div.toggle
-        div.open-close
-          div.tooltip Open / close
-        i.far.fa-window-restore.res
-          div.tooltip-res Reset All Option
-      div.content
-        div.title-box
-          span Color
-        div.color-box
-          ul.colors
-            li.active(data-color='#03a9f4')
-            li(data-color='#E53532')
-            li(data-color='#FCA70C')
-            li(data-color='#2969B3')
-            li(data-color='#33B583')
-        div.title-box
-          span Random Background
-        div.random-background
-          div.or
-            span.yes.active(data-background='yes') Yes
-            span.no(data-background='no') No
-        div.title-box
-          span Bullets Visibility
-        div.bullets
-          div.bullet
-            span.yes.active(data-display='Show') Yes
-            span.no(data-display='hide') No
-        div.title-box
-          span Dark &amp; Light
-        div.theme-option
-          div.theme-box
-            span.light-theme.active(data-background='yes') Light
-            span.dark-theme(data-background='no') Dark
-        div.title-box
-          span About-Us
-        div.remove-about
-          div.theme-box
-            span.visible-theme.active Visible
-            span.hidden-theme Hidden
-        div.title-box
-          span Black &amp; White
-        div.blind
-          div.theme-box
-            span.on-blind On
-            span.off-blind.active Off
-        div.title-box
-          span Heading font
-        select#font.change-font.editable
-          option(value='Righteous') Righteous
-          option(value='Carter') Carter One
-          option(value='Oleo') Oleo Script
-          option(value='Nova') Nova Square
-        div.title-box(style='margin-top: 0')
-          span Erase optional
-        div.reset Erase
-        img(src="https://cdn.picpng.com/color/curve-color-lines-slide-colours-64378.png", alt="")
-    //---------------------------<< start nav  >>-------------------------
-    nav.nav-special 
-      .container 
-        .header-area   
-          .specialdesign
-            | Special 
-            span Design
-          .con-links
-            ul.links
-              li.active 
-                a(data-section='.landing-page') Home 
-              li
-                a(data-section='.about-us') About 
-              li
-                a(data-section='.intro')  Bootcamp 
-              li
-                a(data-section='.gallery')  Gallery
-              li 
-                a(data-section='.timeline')  Locations 
-              li
-                a(data-section='.features') Features
-              li 
-                a(data-section='.testemonial')  Testemonial 
-              li.other 
-                a(href="") Other Links
-                .megamenu
-                  .image-mega
-                    img(src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(41).jpg", alt="")
-                  ul.linkss
-                    li <i class="far fa-comments"></i> testemonials
-                    li <i class="fas fa-user-plus"></i> team member
-                    li <i class="fas fa-house-user"></i> services
-                    li <i class="fas fa-battery-full"></i> our Battery
-                    li <i class="fas fa-building"></i> how it works
-                  ul.linkss
-                    li <i class="fas fa-plus"></i> Add events
-                    li <i class="fas fa-dollar-sign"></i> pricing plan 
-                    li <i class="fas fa-wifi"></i> Connect Wifi
-                    li <i class="fas fa-microphone-alt-slash"></i> Microphone
-                    li <i class="fas fa-percent"></i> request a discount
-            button.toggle-menu
-              span
-              span
-              span
-    //--------------------------<<  landing page  >>-----------------------------
-    section.landing-page
-      .overlay
-        .container(style='height : 115vh') 
-          .heading-text
-            .left-side
-              span.notic
-                span.green NEW
-                | Try our Drag &amp; Drop builder 
-                i.fas.fa-angle-right.right-ch
-              h3.heading
-                | We Are 
-                span Creative
-                |  Agency to create web and mobile apps
-              p lorem or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters, between two or more users of mobile devices
-              input.search-kit(type='search' placeholder='How Can I help you ?')
-              i.fas.fa-search.search-icon
-              button.ssign Sign in
-            .right-side
-              .log-in
-                h3.sii Sign in
-                .user
-                  i.far.fa-user
-                  input.user-email(type='email' placeholder='Username')
-                .pass
-                  i.fas.fa-lock
-                  input.pass-q(type='password' placeholder='Password')
-                .check-forget
-                  span.check
-                    input(type='checkbox')
-                    span(class="remember")  Remember Me
-                  span.forget Forget Password ?
-                button.btn-sign Sign In
-      <svg class="svg-land" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,128C96,128,192,128,288,117.3C384,107,480,85,576,96C672,107,768,149,864,154.7C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    //--------------------------<<  About Us  >>-----------------------------
-    section.container
-      .about-us
-        .image-box.wow.animate__jackInTheBox(data-wow-duration='2s' data-wow-offset='250')
-          //- img(src='https://ecodesoft.com/wp-content/uploads/2020/06/about-us.png')
-          img(src='http://themeht.com/softino/html/ltr/images/banner/01.png')
-          //- img(src='https://www.vertextechnosys.com/client/images/background/02.png')
-        .info-box.wow.animate__fadeInUp(data-wow-duration='1.5s' data-wow-offset='250')
-          h3
-            span.heading Thinking The High Quality Software
-          p lorem or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters, between two or more users of mobile devices
-          button Start a today
-          button learn more 
-    //- ------------------------<<  NEW SECTION FOR INTRO >>------------------------
-    section.intro
-      .overlay
-        .container
-          .con-intro
-            img(src="https://fzi4k1gk2dw3t0fqy18sw8qi-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/logo.svg", alt="")
-            h3 bootcamp studio 
-            p Large online library of pre-defined layouts and sections ready to be inserted into your bootcamp site 
-            button  learn more
-    //--------------------------<<  Skills  >>-----------------------------
-    //- section.skills
-    //-   .overlay
-    //-   <svg class='wave-up' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L40,144C80,160,160,192,240,197.3C320,203,400,181,480,144C560,107,640,53,720,64C800,75,880,149,960,149.3C1040,149,1120,75,1200,74.7C1280,75,1360,149,1400,186.7L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
-    //-   .container
-        //- .all-percentage
-        //-   .box
-        //-     h2 Html
-        //-     .chart(data-percent='85') 85%
-        //-       //- span.num 85%
-        //-   .box
-        //-     h2 Css
-        //-     .chart(data-percent='94') 94%
-        //-   .box
-        //-     h2 js
-        //-     .chart(data-percent='84') 84%
-        //-   .box
-        //-     h2 jquery
-        //-     .chart(data-percent='30') 30%
-        //-   .box
-        //-     h2 php
-        //-     .chart(data-percent='5') 5%
-        //-   .box
-        //-     h2 my sql
-        //-     .chart(data-percent='70') 70%
-        //-   .box
-        //-     h2 vue
-        //-     .chart(data-percent='20') 20%
-        //-   .box
-        //-     h2 graphic
-        //-     .chart(data-percent='50') 50%
-      //- <svg class='wave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L40,266.7C80,277,160,299,240,272C320,245,400,171,480,165.3C560,160,640,224,720,256C800,288,880,288,960,256C1040,224,1120,160,1200,154.7C1280,149,1360,203,1400,229.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-    //--------------------------<<  Gallery  >>-----------------------------
-    section.gallery
-      .container
-        h3.heading Popular Bundles
-        .image-box
-          .box
-            .img
-              img(src='https://s3.amazonaws.com/creativetim_bucket/big_bundles/images/156/original.jpg?1614004375')
-              .overlay
-              section
-                .view(data-src='https://q3p9g6n2.rocketcdn.me/wp-content/ml-loads/2016/02/mobile-apps_phone2_ss_1920.png')
-                  // <i data-src="https://q3p9g6n2.rocketcdn.me/wp-content/ml-loads/2016/02/mobile-apps_phone2_ss_1920.png" class="fas fa-align-left"></i>
-                  p(data-src='https://q3p9g6n2.rocketcdn.me/wp-content/ml-loads/2016/02/mobile-apps_phone2_ss_1920.png') view
-                span.one
-                span.two
-                span.three
-                span.four
-            .card-info
-              h4 Angular Bundle
-                span <del>$200</del> $110
-              p Free Tailwind Starter Kit
-          .box
-            .img
-              img(src='https://s3.amazonaws.com/creativetim_bucket/products/451/thumb/opt_adp_django_thumbnail.jpg?1618317705')
-              .overlay
-              section
-                .view(data-src='https://www.atimi.com/wp-content/uploads/2018/04/img-4-1024x683.jpg')
-                  // <i data-src="https://www.mucreatives.com/wp-content/uploads/2020/02/Why-web-development-is-essential-for-your-business-success.jpg" class="fas fa-align-left"></i>
-                  p(data-src='https://s3.amazonaws.com/creativetim_bucket/products/451/thumb/opt_adp_django_thumbnail.jpg?1618317705') view
-                span.one
-                span.two
-                span.three
-                span.four
-            .card-info
-              h4 Bits - Django snippets 
-                span <del>$130</del> $90
-              p Code snippets for easier coding
-          .box
-            .img
-              img(src='https://wooler.co/wp-content/themes/wooler-landing/assets/images/plugins/plugin-lifetime-update.png')
-              .overlay
-              section
-                .view(data-src='https://i.pinimg.com/originals/88/7d/37/887d37d89f81da19aa77d529002f9cf3.jpg')
-                  // <i data-src="https://i.pinimg.com/originals/88/7d/37/887d37d89f81da19aa77d529002f9cf3.jpg" class="fas fa-align-left"></i>
-                  p(data-src='https://wooler.co/wp-content/themes/wooler-landing/assets/images/plugins/plugin-lifetime-update.png') view 
-                span.one
-                span.two
-                span.three
-                span.four
-            .card-info
-              h4 Material DashboardFREE
-                span <del>$80</del> $50
-              p Bootstrap 4 Material Admin 
-    //--------------------------<<  Timeline  >>-----------------------------
-    section.timeline
-      .overlay
-      <svg class='waveee' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,96C384,85,480,43,576,42.7C672,43,768,85,864,96C960,107,1056,85,1152,85.3C1248,85,1344,107,1392,117.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-      //- <svg class='waveee' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L80,74.7C160,85,320,107,480,112C640,117,800,107,960,90.7C1120,75,1280,53,1360,42.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-      .container
-        .timeline-content
-          h3 our branches
-          .branches 
-            .bran
-              h5 Cairo Branch
-              span Concord Mall - South of the Ninety St., Fifth Settlement - New Cairo
-              button Get Location
-            .bran
-              h5 Giza Branch
-              span Mall of Cairo-Alexandria Desert Road - in front of the Police Hospital
-              button Get Location
-            .bran
-              h5 Alex Branch
-              span Down Town - Cairo-Alexandria Desert Road - in front of the Police Hospital
-              button Get Location
-            .bran
-              h5 Saudi Branch
-              span Salama Dist.Alexandria Desert Road - in front of the Police Hospital
-              button Get Location
-          img(src="https://www.janifarsan.com/images/locator_pin.png", alt="")
-      <svg class='wave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L40,266.7C80,277,160,299,240,272C320,245,400,171,480,165.3C560,160,640,224,720,256C800,288,880,288,960,256C1040,224,1120,160,1200,154.7C1280,149,1360,203,1400,229.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
-
-    //- ------------------------<< price-box  >>---------------------------------------
-    .price-box
-      .container
-        h2 Choose Affordable Prices
-        p Softino Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi
-        .choose-plan 
-          .plan
-            .price-title Starter
-            .content
-              h2 
-                span $
-                | 33
-              span.monthly Monthly Package
-              h4 starter
-              button purchase now
-              ul 
-                li 15 Analytics Compaign
-                li Unlimited Site licenses
-                li 1 Database
-                li 10 Free Optimization
-                li Html5 + Css3
-                li 24/7 Customer Support
-          .plan.ac
-            .price-title premium
-            .content
-              h2 
-                span $
-                | 55
-              span.monthly Monthly Package
-              h4 premium
-              button purchase now
-              ul 
-                li 15 Analytics Compaign
-                li Unlimited Site licenses
-                li 1 Database
-                li 10 Free Optimization
-                li Html5 + Css3
-                li 24/7 Customer Support
-          .plan
-            .price-title professional
-            .content
-              h2 
-                span $
-                | 99
-              span.monthly Monthly Package
-              h4(style='font-size : 33px') profession
-              button purchase now
-              ul 
-                li 15 Analytics Compaign
-                li Unlimited Site licenses
-                li 1 Database
-                li 10 Free Optimization
-                li Html5 + Css3
-                li 24/7 Customer Support
-    //--------------------------<<  new-testemonials  >>-----------------------------
-    .clients-feedback 
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L30,192C60,160,120,96,180,106.7C240,117,300,203,360,234.7C420,267,480,245,540,218.7C600,192,660,160,720,128C780,96,840,64,900,85.3C960,107,1020,181,1080,181.3C1140,181,1200,107,1260,85.3C1320,64,1380,96,1410,112L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
-      .container 
-        h3 You Can See Our Clients Feedback What You Say?
-        .all-clients
-          .clients-say 
-            .content
-              .con-one
-                p Professional recommended and great experience, Nam pulvinar vitae neque et porttitor, Praesent sed nisi eleifend, Consectetur adipisicing elit, sed do eiusmodas temporo incididunt Praesent sed nisi eleifend, Consectetur adipisicing elit
-                h5 lana roadse 
-                span CEO of Softino
-              .con-two
-                p This project really benefited from your ideas. I'm so glad you decided to carve out the time to lend your expertise to this initiative carve out the time to lend your expertise to this initiative time to lend your expertise to this initiative
-                h5 john marvel
-                span Vice President At Company  
-              .con-three
-                p Thank you for putting in the extra effort during this busy time at work. I understand that staying late isn't easy, but the team truly appreciates it time at work. I understand that staying late isn't easy, but the team truly appreciates it
-                h5 kelly mulvihill
-                span Owner , magaharby Hospital 
-          .clients-pic 
-            img.selected(src="https://okcbreastaugmentation.com/images/uploads/181/5eee3001e89b2_43.png?0.022527466841351096" alt="" , data-class="con-one")
-            img(src="https://helpdesk.ua/wp-content/uploads/2020/01/02-1.jpg" alt="" data-class="con-two")
-            //- img(src="https://rdwgroup.com/wp-content/uploads/2020/01/Kaitlyn.jpg" alt="" data-class="con-three")
-            img(src="http://themeht.com/softino/html/ltr/images/testimonial/03.jpg" alt="" data-class="con-three")
-    //--------------------------<<  Testemonial  >>-----------------------------
-    div.all-three-section
-      section.testemonial
-        .container
-          h3.heading This is our owners team
-          p.head-ps Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, pariatur neque. Ad dolorum animi non nostrum quod enim voluptates maiores debitis 
-          .flex-ts-box
-            .ts-box
-              .front
-                div.color-in
-                img(src='https://www.high-profile.com/wp-content/uploads/2021/03/TFMoran_Eric-Salovitch.jpg' width='110px' height='110px')
-                h2 Tom aldahn
-                span CEO
-                p "I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"
-                div 
-                  h4 <i class="fas fa-undo-alt"></i> Auto Rotation
-              .back
-                span.awesome To be or not , this is my awesome motto! 
-                h2 job description 
-                span.back-skills Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...
-                .all-follow
-                  .followers 
-                    span 234
-                    h4 followers 
-                  .followers  
-                    span 114
-                    h4 following 
-                  .followers 
-                    span 35
-                    h4 projects
-                .social-icon
-                  i.fab.fa-facebook-f.facebook-icon
-                  i.fab.fa-google-plus-g
-                  i.fab.fa-twitter.twitter-icon
-            .ts-box
-              .front
-                div.color-in
-                img(src='http://themesindustry.com/html/trax-2020/images/team-4.jpg' width='110px' height='110px')
-                h2 Hayden
-                span Web Developer 
-                p "I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"
-                div 
-                  h4 <i class="fas fa-undo-alt"></i> Auto Rotation
-              .back
-                span.awesome To be or not , this is my awesome motto! 
-                h2 job description 
-                span.back-skills Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...
-                .all-follow
-                  .followers 
-                    span 234
-                    h4 followers 
-                  .followers  
-                    span 114
-                    h4 following 
-                  .followers 
-                    span 35
-                    h4 projects
-                .social-icon
-                  i.fab.fa-facebook-f.facebook-icon
-                  i.fab.fa-google-plus-g
-                  i.fab.fa-twitter.twitter-icon
-            .ts-box
-              .front
-                div.color-in
-                img(src='https://mahmoudfekry.neocities.org/puzzel/images/team3.png' width='110px' height='110px')
-                h2 inna corman
-                span product manager
-                p "I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"
-                div 
-                  h4 <i class="fas fa-undo-alt"></i> Auto Rotation
-              .back
-                span.awesome To be or not , this is my awesome motto! 
-                h2 job description 
-                span.back-skills Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...
-                .all-follow
-                  .followers 
-                    span 234
-                    h4 followers 
-                  .followers  
-                    span 114
-                    h4 following 
-                  .followers 
-                    span 35
-                    h4 projects
-                .social-icon
-                  i.fab.fa-facebook-f.facebook-icon
-                  i.fab.fa-google-plus-g
-                  i.fab.fa-twitter.twitter-icon
-      //---------------------------<< immersive experiences >>-----------------
-      section.immersive 
-        .container
-          h2 Build immersive experiences for web
-          .all-numbers 
-            .box-num 
-              <i class="fas fa-user-friends"></i>
-              span 1,549,211
-              p accounts
-            .box-num 
-              <i class="fas fa-download"></i>
-              span 2,838,311
-              p downloads
-            .box-num 
-              <i class="fas fa-code"></i>
-              span 200
-              p products
-          .join 
-            .title-sub 
-              h4 subscribe our newsletter
-              p Get started for 1 Month free trial No Purchace required.
-            .contact-sub 
-              input(type="email" placeholder='Enter your email')
-              input(class='btn-theme' type="submit" name='Subscribe' value='Subscribe')
-      //--------------------------<<  Features  >>-----------------------------
-      section.features
-        h3.heading Our features
-        p.text-feat Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, pariatur neque. Ad dolorum animi non nostrum quod enim voluptates maiores debitis 
-        .container
-          .flex-feat-box
-            .feat-box
-              img(src='https://image.flaticon.com/icons/png/128/3143/3143636.png' width='80px' height='80px')
-              h4 Calendar
-              p Lorem ipsum dolor sit amet, consectetur.
-              button more info
-            .feat-box
-              img(src='https://image.flaticon.com/icons/png/128/1410/1410059.png' width='80px' height='80px')
-              h4 Touch ID
-              p Lorem ipsum dolor sit amet, consectetur.
-              button more info
-            .feat-box
-              img(src='https://image.flaticon.com/icons/png/128/3989/3989489.png' width='80px' height='80px')
-              h4 Say done
-              p Lorem ipsum dolor sit amet, consectetur.
-              button more info
-            .feat-box.hidden
-              img(src='https://image.flaticon.com/icons/png/128/2398/2398987.png' width='80px' height='80px')
-              h4 Bank
-              p Lorem ipsum dolor sit amet, consectetur.
-              button more info
-            .feat-box.hidden
-              img(src='https://image.flaticon.com/icons/png/128/861/861120.png' width='80px' height='80px')
-              h4 Grow farm
-              p Lorem ipsum dolor sit amet, consectetur.
-              button more info
-            .feat-box.hidden
-              img(src='https://image.flaticon.com/icons/png/128/3135/3135679.png' width='80px' height='80px')
-              h4 Earn money
-              p Lorem ipsum dolor sit amet, consectetur.
-              button more info
-          i(class="icon-down See-more fas fa-chevron-down")
-      //- --------------------------<<  bullets >>-----------------------------
-    //- section.all-bullets
-    //-   .bullet(data-section='.about-us')
-    //-     .tooltip About US
-    //-   .bullet(data-section='.skills')
-    //-     .tooltip Skills
-    //-   .bullet(data-section='.gallery')
-    //-     .tooltip Gallery
-    //-   .bullet(data-section='.timeline')
-    //-     .tooltip Timeline
-    //-   .bullet(data-section='.features')
-    //-     .tooltip features
-    //-   .bullet(data-section='.testemonial')
-    //-     .tooltip testimonials
-    //- --------------------------<<  contact-box >>-----------------------------
-    //- section.all-contact
-    //-   i(class="icon-con fas fa-user-circle fa-2x")
-    //-   div.content 
-    //-     .facebook 
-    //-       i(class="fab fa-facebook-f")
-    //-       span Sign in with facebook
-    //-     .google 
-    //-       i(class="fab fa-google")
-    //-       span Sign in with google
-    //-     .line-or
-    //-       span or
-    //-     form
-    //-       input(type="text" placeholder=('Username'))
-    //-       input(type="text" placeholder=('Password'))
-    //-       button Sign in
-
-
-    //- --------------------------<< Contact Us  >>-----------------------------
-    section.contact
-      .overlay
-      .container
-        h3.heading Contact Us
-        p.text-contact Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, pariatur neque. Ad dolorum animi non nostrum quod enim voluptates maiores debitis 
-        form
-          .left.wow.animate__backInLeft(data-wow-duration='1.3s' data-wow-offset='70')
-            input(type='text' placeholder='Enter Your Name' name='name')
-            input(type='text' placeholder='Enter Your Age' name='age')
-            input(type='email' placeholder='Enter Your Email' name='email')
-            input(type='text' placeholder='Enter Your Phone' name='phone')
-          .right.wow.animate__backInRight(data-wow-duration='1.3s' data-wow-offset='70')
-            textarea(placeholder='Enter Your Message' name='message')
-            input(type='submit' value='Send')
-    //- --------------------------<< scroll to top >>-----------------------------
-    section.scroll-top
-      i.fas.fa-angle-up
-    //- --------------------------<< chat with us >>-----------------------------
-    div.chat-us
-      i(class="ch-message fas fa-comment-alt")
-    div.content-cc
-      .request
-        h3 Request a callback
-        i(class="far fa-window-minimize")
-      p.tit-con Enter your phone number and we will call you back.
-      form 
-        label(for="") Phone number*
-        input(type="text")
-        label(for="") Name
-        input(type="text")
-        label How can we help ?
-        input(type="textarea")  
-      div.be  
-        button send
-    //- --------------------------<< Footer >>-----------------------------
-    footer.footer
-      .container
-        .resources-up
-          .col
-            h4 Company 
-            ul 
-              li about us
-              li freebies
-              li premium
-              li blog 
-              li affiliate program
-              li get coupon 
-          .col 
-            h4 Help and Support 
-            ul 
-              li knowledge center
-              li contact us 
-              li premium support 
-              li sponsorships
-              li custom development 
-          .col 
-            h4 legal 
-            ul 
-              li terms conditions
-              li privacy policy 
-              li EULA 
-          .col 
-            h4 Resources
-            ul 
-              li bootstrap cheat sheet 
-              li third-party tools
-              li illustrations 
-              li bits 
-              li bluehost 
-              li digital ocean 
-              li made with osama adam 
-          .col 
-            h4 Latest News 
-            ul 
-              li latest release
-              li updates
-              li license
-        .about-web 
-          //- img(src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" alt="")
-          img(src="https://image.flaticon.com/icons/png/128/187/187825.png" alt="")
-          h5 Creative team 
-          ul 
-            li 
-              <i class="fab fa-github"></i>
-            li 
-              <i class="fab fa-dribbble"></i>
-            li 
-              <i class="fab fa-facebook-square"></i>
-            li 
-              <i class="fab fa-twitter"></i>
-            li 
-              <i class="fab fa-instagram"></i>
-            li 
-              <i class="fab fa-google"></i>
-            li 
-              <i class="fab fa-youtube"></i>
-          div.all-right  &copy;	 2021 Special Design, all rights reserved. Made with <i class="fas fa-heart"></i>  for a better web.
-    //- --------------------------<<  libs  >>-----------------------------
-    script(src='../../lib/jquery-3.4.1.min.js')
-    script(src='../../lib/jquery.easypiechart.js')
-    //- script(src='../../lib/jquery.nicescroll.min.js')
-    //- script(src='../../lib/all.min.js')
-    script(src='master.js')
-    script(src='../../lib/wow.min.js')
-    script.
-      new WOW().init();
-
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <section class="setting-box">
+      <div class="toggle">
+        <div class="open-close">
+          <div class="tooltip">Open / close</div>
+        </div><i class="far fa-window-restore res">
+          <div class="tooltip-res">Reset All Option</div></i>
+      </div>
+      <div class="content">
+        <div class="title-box"><span>Color</span></div>
+        <div class="color-box">
+          <ul class="colors">
+            <li class="active" data-color="#03a9f4"></li>
+            <li data-color="#E53532"></li>
+            <li data-color="#FCA70C"></li>
+            <li data-color="#2969B3"></li>
+            <li data-color="#33B583"></li>
+          </ul>
+        </div>
+        <div class="title-box"><span>Random Background</span></div>
+        <div class="random-background">
+          <div class="or"><span class="yes active" data-background="yes">Yes</span><span class="no" data-background="no">No</span></div>
+        </div>
+        <div class="title-box"><span>Bullets Visibility</span></div>
+        <div class="bullets">
+          <div class="bullet"><span class="yes active" data-display="Show">Yes</span><span class="no" data-display="hide">No</span></div>
+        </div>
+        <div class="title-box"><span>Dark &amp; Light</span></div>
+        <div class="theme-option">
+          <div class="theme-box"><span class="light-theme active" data-background="yes">Light</span><span class="dark-theme" data-background="no">Dark</span></div>
+        </div>
+        <div class="title-box"><span>About-Us</span></div>
+        <div class="remove-about">
+          <div class="theme-box"><span class="visible-theme active">Visible</span><span class="hidden-theme">Hidden</span></div>
+        </div>
+        <div class="title-box"><span>Black &amp; White</span></div>
+        <div class="blind">
+          <div class="theme-box"><span class="on-blind">On</span><span class="off-blind active">Off</span></div>
+        </div>
+        <div class="title-box"><span>Heading font</span></div>
+        <select class="change-font editable" id="font">
+          <option value="Righteous">Righteous</option>
+          <option value="Carter">Carter One</option>
+          <option value="Oleo">Oleo Script</option>
+          <option value="Nova">Nova Square</option>
+        </select>
+        <div class="title-box" style="margin-top: 0"><span>Erase optional</span></div>
+        <div class="reset">Erase</div><img src="https://cdn.picpng.com/color/curve-color-lines-slide-colours-64378.png" alt="">
+      </div>
+    </section>
+    <nav class="nav-special"> 
+      <div class="container"> 
+        <div class="header-area">  
+          <div class="specialdesign">Special <span>Design</span></div>
+          <div class="con-links">
+            <ul class="links">
+              <li class="active"> <a data-section=".landing-page">Home </a></li>
+              <li><a data-section=".about-us">About </a></li>
+              <li><a data-section=".intro"> Bootcamp </a></li>
+              <li><a data-section=".gallery"> Gallery</a></li>
+              <li> <a data-section=".timeline"> Locations </a></li>
+              <li><a data-section=".features">Features</a></li>
+              <li> <a data-section=".testemonial"> Testemonial </a></li>
+              <li class="other"> <a href="">Other Links</a>
+                <div class="megamenu">
+                  <div class="image-mega"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(41).jpg" alt=""></div>
+                  <ul class="linkss">
+                    <li><i class="far fa-comments"></i> testemonials</li>
+                    <li><i class="fas fa-user-plus"></i> team member</li>
+                    <li><i class="fas fa-house-user"></i> services</li>
+                    <li><i class="fas fa-battery-full"></i> our Battery</li>
+                    <li><i class="fas fa-building"></i> how it works</li>
+                  </ul>
+                  <ul class="linkss">
+                    <li><i class="fas fa-plus"></i> Add events</li>
+                    <li><i class="fas fa-dollar-sign"></i> pricing plan </li>
+                    <li><i class="fas fa-wifi"></i> Connect Wifi</li>
+                    <li><i class="fas fa-microphone-alt-slash"></i> Microphone</li>
+                    <li><i class="fas fa-percent"></i> request a discount</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <button class="toggle-menu"><span></span><span></span><span></span></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="landing-page">
+      <div class="overlay">
+        <div class="container" style="height : 115vh"> 
+          <div class="heading-text">
+            <div class="left-side"><span class="notic"><span class="green">NEW</span>Try our Drag &amp; Drop builder <i class="fas fa-angle-right right-ch"></i></span>
+              <h3 class="heading">We Are <span>Creative</span> Agency to create web and mobile apps</h3>
+              <p>lorem or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters, between two or more users of mobile devices</p>
+              <input class="search-kit" type="search" placeholder="How Can I help you ?"><i class="fas fa-search search-icon"></i>
+              <button class="ssign">Sign in</button>
+            </div>
+            <div class="right-side">
+              <div class="log-in">
+                <h3 class="sii">Sign in</h3>
+                <div class="user"><i class="far fa-user"></i>
+                  <input class="user-email" type="email" placeholder="Username">
+                </div>
+                <div class="pass"><i class="fas fa-lock"></i>
+                  <input class="pass-q" type="password" placeholder="Password">
+                </div>
+                <div class="check-forget"><span class="check">
+                    <input type="checkbox"><span class="remember"> Remember Me</span></span><span class="forget">Forget Password ?</span></div>
+                <button class="btn-sign">Sign In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><svg class="svg-land" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,128C96,128,192,128,288,117.3C384,107,480,85,576,96C672,107,768,149,864,154.7C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <section class="container">
+      <div class="about-us">
+        <div class="image-box wow animate__jackInTheBox" data-wow-duration="2s" data-wow-offset="250"><img src="http://themeht.com/softino/html/ltr/images/banner/01.png"></div>
+        <div class="info-box wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-offset="250">
+          <h3><span class="heading">Thinking The High Quality Software</span></h3>
+          <p>lorem or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters, between two or more users of mobile devices</p>
+          <button>Start a today</button>
+          <button>learn more </button>
+        </div>
+      </div>
+    </section>
+    <section class="intro">
+      <div class="overlay">
+        <div class="container">
+          <div class="con-intro"><img src="https://fzi4k1gk2dw3t0fqy18sw8qi-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/logo.svg" alt="">
+            <h3>bootcamp studio </h3>
+            <p>Large online library of pre-defined layouts and sections ready to be inserted into your bootcamp site </p>
+            <button> learn more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <h3 class="heading">Popular Bundles</h3>
+        <div class="image-box">
+          <div class="box">
+            <div class="img"><img src="https://s3.amazonaws.com/creativetim_bucket/big_bundles/images/156/original.jpg?1614004375">
+              <div class="overlay"></div>
+              <section>
+                <div class="view" data-src="https://q3p9g6n2.rocketcdn.me/wp-content/ml-loads/2016/02/mobile-apps_phone2_ss_1920.png">
+                  <!-- <i data-src="https://q3p9g6n2.rocketcdn.me/wp-content/ml-loads/2016/02/mobile-apps_phone2_ss_1920.png" class="fas fa-align-left"></i>-->
+                  <p data-src="https://q3p9g6n2.rocketcdn.me/wp-content/ml-loads/2016/02/mobile-apps_phone2_ss_1920.png">view</p>
+                </div><span class="one"></span><span class="two"></span><span class="three"></span><span class="four"></span>
+              </section>
+            </div>
+            <div class="card-info">
+              <h4>Angular Bundle<span><del>$200</del> $110</span></h4>
+              <p>Free Tailwind Starter Kit</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img"><img src="https://s3.amazonaws.com/creativetim_bucket/products/451/thumb/opt_adp_django_thumbnail.jpg?1618317705">
+              <div class="overlay"></div>
+              <section>
+                <div class="view" data-src="https://www.atimi.com/wp-content/uploads/2018/04/img-4-1024x683.jpg">
+                  <!-- <i data-src="https://www.mucreatives.com/wp-content/uploads/2020/02/Why-web-development-is-essential-for-your-business-success.jpg" class="fas fa-align-left"></i>-->
+                  <p data-src="https://s3.amazonaws.com/creativetim_bucket/products/451/thumb/opt_adp_django_thumbnail.jpg?1618317705">view</p>
+                </div><span class="one"></span><span class="two"></span><span class="three"></span><span class="four"></span>
+              </section>
+            </div>
+            <div class="card-info">
+              <h4>Bits - Django snippets <span><del>$130</del> $90</span></h4>
+              <p>Code snippets for easier coding</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img"><img src="https://wooler.co/wp-content/themes/wooler-landing/assets/images/plugins/plugin-lifetime-update.png">
+              <div class="overlay"></div>
+              <section>
+                <div class="view" data-src="https://i.pinimg.com/originals/88/7d/37/887d37d89f81da19aa77d529002f9cf3.jpg">
+                  <!-- <i data-src="https://i.pinimg.com/originals/88/7d/37/887d37d89f81da19aa77d529002f9cf3.jpg" class="fas fa-align-left"></i>-->
+                  <p data-src="https://wooler.co/wp-content/themes/wooler-landing/assets/images/plugins/plugin-lifetime-update.png">view </p>
+                </div><span class="one"></span><span class="two"></span><span class="three"></span><span class="four"></span>
+              </section>
+            </div>
+            <div class="card-info">
+              <h4>Material DashboardFREE<span><del>$80</del> $50</span></h4>
+              <p>Bootstrap 4 Material Admin </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="timeline">
+      <div class="overlay"></div><svg class='waveee' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,96C384,85,480,43,576,42.7C672,43,768,85,864,96C960,107,1056,85,1152,85.3C1248,85,1344,107,1392,117.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+      <div class="container">
+        <div class="timeline-content">
+          <h3>our branches</h3>
+          <div class="branches"> 
+            <div class="bran">
+              <h5>Cairo Branch</h5><span>Concord Mall - South of the Ninety St., Fifth Settlement - New Cairo</span>
+              <button>Get Location</button>
+            </div>
+            <div class="bran">
+              <h5>Giza Branch</h5><span>Mall of Cairo-Alexandria Desert Road - in front of the Police Hospital</span>
+              <button>Get Location</button>
+            </div>
+            <div class="bran">
+              <h5>Alex Branch</h5><span>Down Town - Cairo-Alexandria Desert Road - in front of the Police Hospital</span>
+              <button>Get Location</button>
+            </div>
+            <div class="bran">
+              <h5>Saudi Branch</h5><span>Salama Dist.Alexandria Desert Road - in front of the Police Hospital</span>
+              <button>Get Location</button>
+            </div>
+          </div><img src="https://www.janifarsan.com/images/locator_pin.png" alt="">
+        </div>
+      </div><svg class='wave' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L40,266.7C80,277,160,299,240,272C320,245,400,171,480,165.3C560,160,640,224,720,256C800,288,880,288,960,256C1040,224,1120,160,1200,154.7C1280,149,1360,203,1400,229.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </section>
+    <div class="price-box">
+      <div class="container">
+        <h2>Choose Affordable Prices</h2>
+        <p>Softino Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi</p>
+        <div class="choose-plan"> 
+          <div class="plan">
+            <div class="price-title">Starter</div>
+            <div class="content">
+              <h2> <span>$</span>33</h2><span class="monthly">Monthly Package</span>
+              <h4>starter</h4>
+              <button>purchase now</button>
+              <ul> 
+                <li>15 Analytics Compaign</li>
+                <li>Unlimited Site licenses</li>
+                <li>1 Database</li>
+                <li>10 Free Optimization</li>
+                <li>Html5 + Css3</li>
+                <li>24/7 Customer Support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="plan ac">
+            <div class="price-title">premium</div>
+            <div class="content">
+              <h2> <span>$</span>55</h2><span class="monthly">Monthly Package</span>
+              <h4>premium</h4>
+              <button>purchase now</button>
+              <ul> 
+                <li>15 Analytics Compaign</li>
+                <li>Unlimited Site licenses</li>
+                <li>1 Database</li>
+                <li>10 Free Optimization</li>
+                <li>Html5 + Css3</li>
+                <li>24/7 Customer Support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="price-title">professional</div>
+            <div class="content">
+              <h2> <span>$</span>99</h2><span class="monthly">Monthly Package</span>
+              <h4 style="font-size : 33px">profession</h4>
+              <button>purchase now</button>
+              <ul> 
+                <li>15 Analytics Compaign</li>
+                <li>Unlimited Site licenses</li>
+                <li>1 Database</li>
+                <li>10 Free Optimization</li>
+                <li>Html5 + Css3</li>
+                <li>24/7 Customer Support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clients-feedback">
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L30,192C60,160,120,96,180,106.7C240,117,300,203,360,234.7C420,267,480,245,540,218.7C600,192,660,160,720,128C780,96,840,64,900,85.3C960,107,1020,181,1080,181.3C1140,181,1200,107,1260,85.3C1320,64,1380,96,1410,112L1440,128L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"></path></svg>
+      <div class="container"> 
+        <h3>You Can See Our Clients Feedback What You Say?</h3>
+        <div class="all-clients">
+          <div class="clients-say"> 
+            <div class="content">
+              <div class="con-one">
+                <p>Professional recommended and great experience, Nam pulvinar vitae neque et porttitor, Praesent sed nisi eleifend, Consectetur adipisicing elit, sed do eiusmodas temporo incididunt Praesent sed nisi eleifend, Consectetur adipisicing elit</p>
+                <h5>lana roadse </h5><span>CEO of Softino</span>
+              </div>
+              <div class="con-two">
+                <p>This project really benefited from your ideas. I'm so glad you decided to carve out the time to lend your expertise to this initiative carve out the time to lend your expertise to this initiative time to lend your expertise to this initiative</p>
+                <h5>john marvel</h5><span>Vice President At Company  </span>
+              </div>
+              <div class="con-three">
+                <p>Thank you for putting in the extra effort during this busy time at work. I understand that staying late isn't easy, but the team truly appreciates it time at work. I understand that staying late isn't easy, but the team truly appreciates it</p>
+                <h5>kelly mulvihill</h5><span>Owner , magaharby Hospital </span>
+              </div>
+            </div>
+          </div>
+          <div class="clients-pic"> <img class="selected" src="https://okcbreastaugmentation.com/images/uploads/181/5eee3001e89b2_43.png?0.022527466841351096" alt="" data-class="con-one"><img src="https://helpdesk.ua/wp-content/uploads/2020/01/02-1.jpg" alt="" data-class="con-two"><img src="http://themeht.com/softino/html/ltr/images/testimonial/03.jpg" alt="" data-class="con-three"></div>
+        </div>
+      </div>
+    </div>
+    <div class="all-three-section">
+      <section class="testemonial">
+        <div class="container">
+          <h3 class="heading">This is our owners team</h3>
+          <p class="head-ps">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, pariatur neque. Ad dolorum animi non nostrum quod enim voluptates maiores debitis </p>
+          <div class="flex-ts-box">
+            <div class="ts-box">
+              <div class="front">
+                <div class="color-in"></div><img src="https://www.high-profile.com/wp-content/uploads/2021/03/TFMoran_Eric-Salovitch.jpg" width="110px" height="110px">
+                <h2>Tom aldahn</h2><span>CEO</span>
+                <p>"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                <div> 
+                  <h4><i class="fas fa-undo-alt"></i> Auto Rotation</h4>
+                </div>
+              </div>
+              <div class="back"><span class="awesome">To be or not , this is my awesome motto! </span>
+                <h2>job description </h2><span class="back-skills">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</span>
+                <div class="all-follow">
+                  <div class="followers"> <span>234</span>
+                    <h4>followers </h4>
+                  </div>
+                  <div class="followers"> <span>114</span>
+                    <h4>following </h4>
+                  </div>
+                  <div class="followers"> <span>35</span>
+                    <h4>projects</h4>
+                  </div>
+                </div>
+                <div class="social-icon"><i class="fab fa-facebook-f facebook-icon"></i><i class="fab fa-google-plus-g"></i><i class="fab fa-twitter twitter-icon"></i></div>
+              </div>
+            </div>
+            <div class="ts-box">
+              <div class="front">
+                <div class="color-in"></div><img src="http://themesindustry.com/html/trax-2020/images/team-4.jpg" width="110px" height="110px">
+                <h2>Hayden</h2><span>Web Developer </span>
+                <p>"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                <div> 
+                  <h4><i class="fas fa-undo-alt"></i> Auto Rotation</h4>
+                </div>
+              </div>
+              <div class="back"><span class="awesome">To be or not , this is my awesome motto! </span>
+                <h2>job description </h2><span class="back-skills">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</span>
+                <div class="all-follow">
+                  <div class="followers"> <span>234</span>
+                    <h4>followers </h4>
+                  </div>
+                  <div class="followers"> <span>114</span>
+                    <h4>following </h4>
+                  </div>
+                  <div class="followers"> <span>35</span>
+                    <h4>projects</h4>
+                  </div>
+                </div>
+                <div class="social-icon"><i class="fab fa-facebook-f facebook-icon"></i><i class="fab fa-google-plus-g"></i><i class="fab fa-twitter twitter-icon"></i></div>
+              </div>
+            </div>
+            <div class="ts-box">
+              <div class="front">
+                <div class="color-in"></div><img src="https://mahmoudfekry.neocities.org/puzzel/images/team3.png" width="110px" height="110px">
+                <h2>inna corman</h2><span>product manager</span>
+                <p>"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>
+                <div> 
+                  <h4><i class="fas fa-undo-alt"></i> Auto Rotation</h4>
+                </div>
+              </div>
+              <div class="back"><span class="awesome">To be or not , this is my awesome motto! </span>
+                <h2>job description </h2><span class="back-skills">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</span>
+                <div class="all-follow">
+                  <div class="followers"> <span>234</span>
+                    <h4>followers </h4>
+                  </div>
+                  <div class="followers"> <span>114</span>
+                    <h4>following </h4>
+                  </div>
+                  <div class="followers"> <span>35</span>
+                    <h4>projects</h4>
+                  </div>
+                </div>
+                <div class="social-icon"><i class="fab fa-facebook-f facebook-icon"></i><i class="fab fa-google-plus-g"></i><i class="fab fa-twitter twitter-icon"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="immersive"> 
+        <div class="container">
+          <h2>Build immersive experiences for web</h2>
+          <div class="all-numbers"> 
+            <div class="box-num">
+               <i class="fas fa-user-friends"></i><span>1,549,211</span>
+              <p>accounts</p>
+            </div>
+            <div class="box-num">
+               <i class="fas fa-download"></i><span>2,838,311</span>
+              <p>downloads</p>
+            </div>
+            <div class="box-num">
+               <i class="fas fa-code"></i><span>200</span>
+              <p>products</p>
+            </div>
+          </div>
+          <div class="join"> 
+            <div class="title-sub"> 
+              <h4>subscribe our newsletter</h4>
+              <p>Get started for 1 Month free trial No Purchace required.</p>
+            </div>
+            <div class="contact-sub"> 
+              <input type="email" placeholder="Enter your email">
+              <input class="btn-theme" type="submit" name="Subscribe" value="Subscribe">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <h3 class="heading">Our features</h3>
+        <p class="text-feat">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, pariatur neque. Ad dolorum animi non nostrum quod enim voluptates maiores debitis </p>
+        <div class="container">
+          <div class="flex-feat-box">
+            <div class="feat-box"><img src="https://image.flaticon.com/icons/png/128/3143/3143636.png" width="80px" height="80px">
+              <h4>Calendar</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <button>more info</button>
+            </div>
+            <div class="feat-box"><img src="https://image.flaticon.com/icons/png/128/1410/1410059.png" width="80px" height="80px">
+              <h4>Touch ID</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <button>more info</button>
+            </div>
+            <div class="feat-box"><img src="https://image.flaticon.com/icons/png/128/3989/3989489.png" width="80px" height="80px">
+              <h4>Say done</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <button>more info</button>
+            </div>
+            <div class="feat-box hidden"><img src="https://image.flaticon.com/icons/png/128/2398/2398987.png" width="80px" height="80px">
+              <h4>Bank</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <button>more info</button>
+            </div>
+            <div class="feat-box hidden"><img src="https://image.flaticon.com/icons/png/128/861/861120.png" width="80px" height="80px">
+              <h4>Grow farm</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <button>more info</button>
+            </div>
+            <div class="feat-box hidden"><img src="https://image.flaticon.com/icons/png/128/3135/3135679.png" width="80px" height="80px">
+              <h4>Earn money</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              <button>more info</button>
+            </div>
+          </div><i class="icon-down See-more fas fa-chevron-down"></i>
+        </div>
+      </section>
+    </div>
+    <section class="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <h3 class="heading">Contact Us</h3>
+        <p class="text-contact">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, pariatur neque. Ad dolorum animi non nostrum quod enim voluptates maiores debitis </p>
+        <form>
+          <div class="left wow animate__backInLeft" data-wow-duration="1.3s" data-wow-offset="70">
+            <input type="text" placeholder="Enter Your Name" name="name">
+            <input type="text" placeholder="Enter Your Age" name="age">
+            <input type="email" placeholder="Enter Your Email" name="email">
+            <input type="text" placeholder="Enter Your Phone" name="phone">
+          </div>
+          <div class="right wow animate__backInRight" data-wow-duration="1.3s" data-wow-offset="70">
+            <textarea placeholder="Enter Your Message" name="message"></textarea>
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="scroll-top"><i class="fas fa-angle-up"></i></section>
+    <div class="chat-us"><i class="ch-message fas fa-comment-alt"></i></div>
+    <div class="content-cc">
+      <div class="request">
+        <h3>Request a callback</h3><i class="far fa-window-minimize"></i>
+      </div>
+      <p class="tit-con">Enter your phone number and we will call you back.</p>
+      <form> 
+        <label for="">Phone number*</label>
+        <input type="text">
+        <label for="">Name</label>
+        <input type="text">
+        <label>How can we help ?</label>
+        <input type="textarea">
+      </form>
+      <div class="be"> 
+        <button>send</button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="resources-up">
+          <div class="col">
+            <h4>Company </h4>
+            <ul> 
+              <li>about us</li>
+              <li>freebies</li>
+              <li>premium</li>
+              <li>blog </li>
+              <li>affiliate program</li>
+              <li>get coupon </li>
+            </ul>
+          </div>
+          <div class="col"> 
+            <h4>Help and Support </h4>
+            <ul> 
+              <li>knowledge center</li>
+              <li>contact us </li>
+              <li>premium support </li>
+              <li>sponsorships</li>
+              <li>custom development </li>
+            </ul>
+          </div>
+          <div class="col"> 
+            <h4>legal </h4>
+            <ul> 
+              <li>terms conditions</li>
+              <li>privacy policy </li>
+              <li>EULA </li>
+            </ul>
+          </div>
+          <div class="col"> 
+            <h4>Resources</h4>
+            <ul> 
+              <li>bootstrap cheat sheet </li>
+              <li>third-party tools</li>
+              <li>illustrations </li>
+              <li>bits </li>
+              <li>bluehost </li>
+              <li>digital ocean </li>
+              <li>made with osama adam </li>
+            </ul>
+          </div>
+          <div class="col"> 
+            <h4>Latest News </h4>
+            <ul> 
+              <li>latest release</li>
+              <li>updates</li>
+              <li>license</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about-web"> <img src="https://image.flaticon.com/icons/png/128/187/187825.png" alt="">
+          <h5>Creative team </h5>
+          <ul> 
+            <li>
+               <i class="fab fa-github"></i></li>
+            <li>
+               <i class="fab fa-dribbble"></i></li>
+            <li>
+               <i class="fab fa-facebook-square"></i></li>
+            <li>
+               <i class="fab fa-twitter"></i></li>
+            <li>
+               <i class="fab fa-instagram"></i></li>
+            <li>
+               <i class="fab fa-google"></i></li>
+            <li>
+               <i class="fab fa-youtube"></i></li>
+          </ul>
+          <div class="all-right"> &copy;	 2021 Special Design, all rights reserved. Made with <i class="fas fa-heart"></i>  for a better web.</div>
+        </div>
+      </div>
+    </footer
+  </body>
+</html>
