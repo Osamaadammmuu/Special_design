@@ -2,10 +2,12 @@
 document.querySelector(".toggle .open-close").onclick = function () {
   //    this.classList.toggle('fa-spin');
   document.querySelector(".setting-box").classList.toggle("open");
+  document.querySelector(".toggle").style.borderRadius = "0 0 0 20px";
 };
-document.querySelector(".icon-con").onclick = function () {
-  document.querySelector(".all-contact").classList.toggle("open");
-};
+
+// document.querySelector(".icon-con").onclick = function () {
+//   document.querySelector(".all-contact").classList.toggle("open");
+// };
 // fixed background
 $(function () {
   $(document).scroll(function () {
@@ -28,6 +30,26 @@ if (mainColors !== null) {
     }
   });
 }
+// ----------------<< megamenu  >>-----------------------------
+
+$(".nav-special .links .other").hover(function(){
+  $('.megamenu').css("opacity", "1");
+  $('.megamenu').css("display", "flex");
+  }, function(){
+  // $('.megamenu').css("opacity", "0");
+  // $('.megamenu').css("display", "none");
+});
+
+$(".megamenu").mouseleave(function(){
+  // $('.megamenu').css("opacity", "1");
+  // $('.megamenu').css("display", "flex");
+  }, function(){
+  $('.megamenu').css("opacity", "0");
+  $('.megamenu').css("display", "none");
+});
+
+
+
 //--------------<< switch colors >>--------------------//
 
 const colorsLi = document.querySelectorAll(".colors li"); // switch color
@@ -168,27 +190,27 @@ randomImgs();
 
 // ----------------------------<<  animation when arrive in progress skill  >>------------------------------//
 
-let ourSkills = document.querySelector(".skills");
+// let ourSkills = document.querySelector(".skills");
 
-window.onscroll = function () {
-  let skillsOffsetTop = ourSkills.offsetTop;
+// window.onscroll = function () {
+//   let skillsOffsetTop = ourSkills.offsetTop;
 
-  let skillsOffsetHeight = ourSkills.offsetHeight;
+//   let skillsOffsetHeight = ourSkills.offsetHeight;
 
-  let WindowsHeight = this.innerHeight;
+//   let WindowsHeight = this.innerHeight;
 
-  let WindowSrollTop = this.pageYOffset;
+//   let WindowSrollTop = this.pageYOffset;
 
-  if (WindowSrollTop > skillsOffsetTop + skillsOffsetHeight - WindowsHeight) {
-    let allSkills = document.querySelectorAll(
-      ".skills .skills-box .skill-progress span"
-    );
+//   if (WindowSrollTop > skillsOffsetTop + skillsOffsetHeight - WindowsHeight) {
+//     let allSkills = document.querySelectorAll(
+//       ".skills .skills-box .skill-progress span"
+//     );
 
-    allSkills.forEach((skill) => {
-      skill.style.width = skill.dataset.progress;
-    });
-  }
-};
+//     allSkills.forEach((skill) => {
+//       skill.style.width = skill.dataset.progress;
+//     });
+//   }
+// };
 
 // >>----------------------------<<  Create element for popup  >>--------------------------------<<
 
@@ -258,20 +280,17 @@ document.addEventListener("click", function (e) {
 
 // >>----------------------------<<  links  >>--------------------------------<<
 
-const allLinks = document.querySelectorAll(".links li");
+const allLinks = document.querySelectorAll(".links li a");
 
-//allLinks.forEach( link => {
-//
-//    link.addEventListener("click", (e) => {
-//
-//        e.preventDefault();
-//
-//        document.querySelector(e.target.dataset.section).scrollIntoView({
-//
-//            behavior : 'smooth'
-//        });
-//    });
-//});
+// allLinks.forEach((link) => {
+//   link.addEventListener("click", (e) => {
+//     e.preventDefault();
+
+//     document.querySelector(e.target.dataset.section).scrollIntoView({
+//       behavior: "smooth",
+//     });
+//   });
+// });
 
 //---------------------<< helpers function >>-----------------------
 
